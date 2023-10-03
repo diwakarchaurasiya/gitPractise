@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;500;600&family=Poppins:wght@200;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --secondaryColor: rgb(237, 237, 237);
+  background: rgb(58, 58, 58);
+}
+
+main {
+  background: linear-gradient(135deg, #fe7b00, #332a69);
+  width: 35rem;
+  height: fit-content;
+  margin: 3rem auto 0;
+  padding: 2rem;
+ 
+  font-family: 'Poppins', sans-serif;
+  border-radius: 15px;
+}
+
+main .inputField {
+  display: flex;
+  width: 30rem;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid var(--secondaryColor); */
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+}
+
+main .inputField input {
+  height: 3rem;
+  width: 88%;
+  border: none;
+  border-radius: 10rem;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  background: var(--secondaryColor);
+}
+
+main .inputField input::placeholder {
+  font-size: 1.3rem;
+  padding-left: 1rem;
+  color: #3a3a3a;
+
+}
+#imageDetail{
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: light;
+  color: #fff;
+}
+main .inputField button {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  color: #3a3a3a;
+  cursor: pointer;
+  font-weight: bold;
+  background: var(--secondaryColor);
+}
+main .inputField button:hover{
+  background: #323232;
+  color: #fff;
+  transition: .3s;
+}
+
+main h1 {
+  color:#fff;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 2rem;
+}
+
+main .weatherShow {
+  width: 8rem;
+  display: block;
+  margin: auto;
+}
+.city,#tempratureShow {
+  font-size: 4rem;
+  text-align: center;
+  color: #fff;
+  font-weight: lighter;
+   font-family: 'poppins', sans-serif;
+}
+#tempratureShow {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: poppins,'sans-serif';
+}
+main .flexWindHumidity{
+  display: flex;
+  width: 100%;
+  margin: 2rem 0 1rem;
+  /* height: 20rem; */
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+main .flexWindHumidity  img{
+width: 2.5rem;
+height: 2.5rem;
+}
+main .flexWindHumidity .left,.right{
+  display: flex;
+  padding: 0 2rem;
+  align-items: center;
+  justify-content: center;
+}
+main .flexWindHumidity span{
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+}
+main .flexWindHumidity span{
+  font-size: 2rem;
+  margin-left: 1.2rem;
+  font-family: poppins,'sans-serif';
+  font-weight: bold;
+}
+.center{
+text-align: center;  
+color: #fff;
+font-size: 1.2rem;
+margin-top: 2rem;
+}
+.center a{
+  font-weight: bold;
+  color: #ff8800;
+}
+main .flexWindHumidity p:nth-child(2){
+  font-size: 1.2rem;
+}
+@media screen and (max-width:415px){
+  html{
+    font-size: 40%;
+  }
+  main{
+    width: 90%;
+    margin-top: 30%;
+  }
+}
